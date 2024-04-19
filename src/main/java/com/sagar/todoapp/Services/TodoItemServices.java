@@ -4,10 +4,12 @@ import com.sagar.todoapp.Repositories.TodoItemRepository;
 import com.sagar.todoapp.models.TodoItem;
 import org.aspectj.apache.bcel.classfile.Module;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.time.Instant;
 import java.util.Optional;
 
+@Service
 public class TodoItemServices {
     @Autowired
     private TodoItemRepository todoItemRepository;
